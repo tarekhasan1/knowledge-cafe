@@ -1,0 +1,82 @@
+.card {
+    border-bottom: 1px solid rgba(17, 17, 17, 0.1);
+    margin-bottom: 25px;
+}
+.card:last-of-type {
+    border-bottom: none;
+}
+.card .card-img {
+    width: 100%;
+    height: 450px;
+    border-radius: 5px;
+}
+
+/*************** card header styles ***********/
+.card .card-header {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.card-header .author-details {
+    display: grid;
+    grid-template-columns: 60px 1fr;
+    column-gap: 15px;
+    align-items: center;
+}
+.card-header .author-details .author-img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    grid-row: 1 / span 2;
+}
+.card-header .author-details .author-name {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 160%;
+    color: #111111;
+}
+.card-header .author-details .publish-date {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 160%;
+    color: rgba(17, 17, 17, 0.6);
+}
+.card-header .min-read {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: right;
+    color: rgba(17, 17, 17, 0.6);
+    border: none;
+    cursor: pointer;
+    background-color: #fff;
+}
+
+.card .card-title {
+    margin: 20px 0;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 1.4;
+    color: #111111;
+}
+.card .hash-tag a {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 160%;
+    color: rgba(17, 17, 17, 0.6);
+    text-decoration: none;
+    margin-right: 30px;
+}
+.card .read-mark-btn {
+    margin: 20px 0 15px;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+    text-decoration-line: underline;
+    color: #6047ec;
+    border: none;
+    background-color: #fff;
+}

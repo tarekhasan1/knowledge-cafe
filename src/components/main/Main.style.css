@@ -1,0 +1,11 @@
+#main-sec {
+    display: grid;
+    grid-template-columns: 70% 30%;
+    column-gap: 20px;
+}
+/* #main-sec #card-container {
+    border: 1px solid black;
+} */
+#main-sec #right-sidebar {
+    border: 1px solid black;
+}
