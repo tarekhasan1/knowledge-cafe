@@ -13,3 +13,28 @@ code {
     font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
         monospace;
 }
+
+img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* App container styles */
+.container {
+    min-width: 1100px;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 50px;
+}
+
+@media only screen and (max-width: 540px) {
+    .container {
+        min-width: 100%;
+        max-width: 100%;
+        padding: 0 10px;
+    }
+}

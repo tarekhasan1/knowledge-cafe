@@ -1,12 +1,10 @@
-import "./App.css";
+import Layout from "./components/layout/Layout";
 
 function App() {
     return (
-        <div className="App">
-            <header className="App-header">
-                <h1>Hello World!</h1>
-            </header>
-        </div>
+        <section className="container">
+            <Layout />
+        </section>
     );
 }
 
