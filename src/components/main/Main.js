@@ -10,7 +10,15 @@ export default function Main() {
                 <Card />
             </div>
             <div id="right-sidebar">
-                <h1>right sec</h1>
+                <div id="spent-time">
+                    <p>Spent time on read: {177} min</p>
+                </div>
+                <div id="bookmarked-lists">
+                    <h3>Bookmarked Blogs : {8}</h3>
+                    <p className="bookmarked-name">
+                        Master Microsoft Power Platform and Become an In-Demand!
+                    </p>
+                </div>
             </div>
         </main>
     );

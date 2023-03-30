@@ -80,3 +80,12 @@
     border: none;
     background-color: #fff;
 }
+
+@media only screen and (max-width: 540px) {
+    .card .card-img {
+        height: auto;
+    }
+    .card .card-title {
+        font-size: 30px;
+    }
+}
