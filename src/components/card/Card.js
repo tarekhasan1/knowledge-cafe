@@ -1,23 +1,34 @@
-import author from "../../assets/images/Faridul-Islam.jpg";
 import vector from "../../assets/images/Vector.png";
 import "./Card.style.css";
 
-export default function Card() {
+export default function Card({ data, methods }) {
+    const {
+        author_name,
+        blog_title,
+        blog_cover_image,
+        author_image,
+        read_time,
+        publish_date,
+        hash_tags,
+    } = data;
+    const { spentTimeHandler, bookmarkedHandler } = methods;
+
     return (
         <div className="card">
-            <img
-                className="card-img"
-                src="https://media.istockphoto.com/id/1425828458/photo/young-man-uses-multiple-computers-while-coding-developing-web-site.jpg?s=1024x1024&w=is&k=20&c=FCJlhBKIesJCAEawttVQGE7HSXguNnMx5B-EUIFujP4="
-                alt=""
-            />
+            <img className="card-img" src={blog_cover_image} alt="" />
             <div className="card-header">
                 <div className="author-details">
-                    <img className="author-img" src={author} alt="" />
-                    <h5 className="author-name">Mr. Raju</h5>
-                    <p className="publish-date">Mar 14 (4 Days ago)</p>
+                    <img className="author-img" src={author_image} alt="" />
+                    <h5 className="author-name">{author_name}</h5>
+                    <p className="publish-date">{publish_date}</p>
                 </div>
-                <button className="min-read">
-                    05 min read{" "}
+                <button
+                    className="min-read"
+                    onClick={() => spentTimeHandler(read_time)}
+                >
+                    {`${
+                        read_time < 10 ? `0${read_time}` : read_time
+                    } min read `}
                     <img
                         src={vector}
                         style={{ height: "18px", width: "15px" }}
@@ -25,14 +36,22 @@ export default function Card() {
                     />
                 </button>
             </div>
-            <h1 className="card-title">
-                How to get your first job as a self-taught programmer
-            </h1>
+            <h1 className="card-title">{blog_title}</h1>
             <div className="hash-tag">
-                {" "}
-                <a href="#/">#beginners</a> <a href="#/">#programming</a>
+                {Array.isArray(hash_tags) &&
+                    hash_tags.length > 0 &&
+                    hash_tags.map((tag, index) => (
+                        <a key={index} href="#/">
+                            #{tag}
+                        </a>
+                    ))}
             </div>
-            <button className="read-mark-btn">Mark as read</button>
+            <button
+                className="read-mark-btn"
+                onClick={() => bookmarkedHandler(blog_title)}
+            >
+                Mark as read
+            </button>
         </div>
     );
 }

@@ -62,6 +62,11 @@
     line-height: 1.4;
     color: #111111;
 }
+.card .hash-tag {
+    max-width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
 .card .hash-tag a {
     font-weight: 500;
     font-size: 20px;
