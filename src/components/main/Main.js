@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import Card from "../card/Card";
+import Toast from "../toast/Toast";
 import "./Main.style.css";
 
 export default function Main() {
@@ -42,10 +43,12 @@ export default function Main() {
             setBookmarked((preMarked) => [...preMarked, blogName]);
         } else {
             setShowToast(true);
-            setTimeout(() => {
-                setShowToast(false);
-            }, 3000);
         }
+    };
+
+    // toastHandler
+    const toastHandler = () => {
+        setShowToast(false);
     };
 
     const methods = {
@@ -79,7 +82,7 @@ export default function Main() {
                         ))}
                 </div>
             </div>
-            {showToast && <h1>Show Toast</h1>}
+            {showToast && <Toast toastHandler={toastHandler} />}
         </main>
     );
 }

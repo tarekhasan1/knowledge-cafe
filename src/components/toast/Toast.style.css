@@ -1,0 +1,33 @@
+.notification-container {
+    font-size: 16px;
+    box-sizing: border-box;
+    width: 450px;
+    background-color: #3cabc5;
+    border-radius: 10px;
+    position: fixed;
+    top: 10px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    /* border: 1px solid black; */
+    padding: 20px;
+    color: #fff;
+    font-weight: 600;
+}
+.notification-container button {
+    position: absolute;
+    top: 2px;
+    right: 2px;
+    padding: 0;
+    font-size: 20px;
+    font-weight: 900;
+    line-height: 1;
+    border: none;
+    background-color: #3cabc5;
+    color: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    cursor: pointer;
+}
+.notification-title {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
