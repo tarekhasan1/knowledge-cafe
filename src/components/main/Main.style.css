@@ -4,7 +4,6 @@
     column-gap: 2%;
     margin-bottom: 50px;
 }
-
 #right-sidebar #spent-time {
     height: 80px;
     background: rgba(96, 71, 236, 0.1);
@@ -46,5 +45,8 @@
 @media only screen and (max-width: 540px) {
     #main-sec {
         display: block;
+    }
+    #right-sidebar {
+        margin-top: 45px;
     }
 }

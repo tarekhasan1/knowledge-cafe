@@ -1,0 +1,13 @@
+.blog-section #blog-title {
+    font-size: 35px;
+    margin: 20px 0;
+}
+.blog-section .question-name {
+    font-size: 25px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.blog-section .answer {
+    margin: 0 0 20px 30px;
+    font-size: 16px;
+}

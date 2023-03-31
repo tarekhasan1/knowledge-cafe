@@ -6,7 +6,7 @@ export default function Navbar() {
         <header>
             <div id="nav-container">
                 <h1 id="navbar-brand">Knowledge Cafe</h1>
-                <ul id="navbar">
+                {/* <ul id="navbar">
                     <li>
                         <a href="home">Home</a>
                     </li>
@@ -21,7 +21,8 @@ export default function Navbar() {
                             <img src={logo} alt="" id="logo" />
                         </a>
                     </li>
-                </ul>
+                </ul> */}
+                <img src={logo} alt="" id="logo" />
             </div>
             <hr />
         </header>

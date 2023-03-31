@@ -59,7 +59,7 @@
 .card-header .min-read .bookmark:hover {
     transform: scale(1.2);
 }
-.card-header .min-read .card .card-title {
+.card .card-title {
     margin: 20px 0;
     font-style: normal;
     font-weight: 700;
@@ -96,19 +96,26 @@
     .card .card-img {
         height: auto;
     }
-    .card .card-header {
-        flex-direction: column;
-        row-gap: 15px;
-        align-items: start;
-    }
-    .card-header .min-read {
-        text-align: right;
-        width: 100%;
-    }
     .card .card-title {
         font-size: 30px;
     }
     .card .hash-tag {
         justify-content: center;
+    }
+}
+@media only screen and (max-width: 415px) {
+    .card .card-header {
+        flex-direction: column;
+        row-gap: 10px;
+        align-items: start;
+        margin-bottom: 20px;
+    }
+    .card-header .min-read {
+        width: 100%;
+        justify-content: end;
+    }
+    .card .card-title {
+        font-weight: 700;
+        font-size: 25px;
     }
 }

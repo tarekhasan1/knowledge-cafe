@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import Blog from "../blog/Blog";
 import Card from "../card/Card";
 import Toast from "../toast/Toast";
 import "./Main.style.css";
@@ -68,6 +69,7 @@ export default function Main() {
                         <Card key={card.id} data={card} methods={methods} />
                     ))}
                 {error && <h2>There was an error to get data!</h2>}
+                <Blog />
             </div>
             <div id="right-sidebar">
                 <div id="spent-time">

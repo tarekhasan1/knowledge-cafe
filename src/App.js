@@ -1,4 +1,3 @@
-import Blog from "./components/blog/Blog";
 import Main from "./components/main/Main";
 import Navbar from "./components/navbar/Navbar";
 
@@ -7,7 +6,6 @@ function App() {
         <section className="container">
             <Navbar />
             <Main />
-            <Blog />
         </section>
     );
 }
