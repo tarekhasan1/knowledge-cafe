@@ -37,15 +37,15 @@ export default function Main() {
 
     // bookmarked handler
     const bookmarkedHandler = (blogName) => {
-        // if (!bookmarked.includes(blogName)) {
-        //     setShowToast(false);
-        //     setBookmarked((preMarked) => [...preMarked, blogName]);
-        // } else {
-        //     setShowToast(true);
-        //     setTimeout(() => {
-        //         setShowToast(false);
-        //     }, 3000);
-        // }
+        if (!bookmarked.includes(blogName)) {
+            setShowToast(false);
+            setBookmarked((preMarked) => [...preMarked, blogName]);
+        } else {
+            setShowToast(true);
+            setTimeout(() => {
+                setShowToast(false);
+            }, 3000);
+        }
     };
 
     const methods = {
