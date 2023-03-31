@@ -49,12 +49,17 @@
     line-height: 24px;
     text-align: right;
     color: rgba(17, 17, 17, 0.6);
-    border: none;
-    cursor: pointer;
-    background-color: #fff;
+    display: flex;
+    align-items: center;
 }
-
-.card .card-title {
+.card-header .min-read .bookmark {
+    margin-left: 10px;
+    cursor: pointer;
+}
+.card-header .min-read .bookmark:hover {
+    transform: scale(1.2);
+}
+.card-header .min-read .card .card-title {
     margin: 20px 0;
     font-style: normal;
     font-weight: 700;

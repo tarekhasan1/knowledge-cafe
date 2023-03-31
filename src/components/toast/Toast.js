@@ -5,9 +5,9 @@ export default function Toast({toastHandler}) {
         <div className="notification-container">
             <button onClick={toastHandler}>X</button>
             <div>
-                <p className="notification-title">Info :</p>
+                <p className="notification-title">Alert</p>
                 <p className="notification-message">
-                    You have already added this blog to the bookmarked!
+                You Have Already Bookmarked This Blog!
                 </p>
             </div>
         </div>

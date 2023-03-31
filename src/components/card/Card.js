@@ -22,19 +22,18 @@ export default function Card({ data, methods }) {
                     <h5 className="author-name">{author_name}</h5>
                     <p className="publish-date">{publish_date}</p>
                 </div>
-                <button
-                    className="min-read"
-                    onClick={() => spentTimeHandler(read_time)}
-                >
+                <div className="min-read">
                     {`${
                         read_time < 10 ? `0${read_time}` : read_time
-                    } min read `}
+                    } min read`}
                     <img
+                        className="bookmark"
+                        onClick={() => bookmarkedHandler(blog_title)}
                         src={vector}
                         style={{ height: "18px", width: "15px" }}
                         alt=""
                     />
-                </button>
+                </div>
             </div>
             <h1 className="card-title">{blog_title}</h1>
             <div className="hash-tag">
@@ -48,7 +47,7 @@ export default function Card({ data, methods }) {
             </div>
             <button
                 className="read-mark-btn"
-                onClick={() => bookmarkedHandler(blog_title)}
+                onClick={() => spentTimeHandler(read_time)}
             >
                 Mark as read
             </button>

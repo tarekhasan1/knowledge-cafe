@@ -1,9 +1,11 @@
-import Layout from "./components/layout/Layout";
+import Main from "./components/main/Main";
+import Navbar from "./components/navbar/Navbar";
 
 function App() {
     return (
         <section className="container">
-            <Layout />
+            <Navbar />
+            <Main />
         </section>
     );
 }
